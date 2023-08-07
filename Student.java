@@ -31,18 +31,23 @@ public class Student {
   public int getGrade() {
     return grade;
   }
+
   public void setGrade(int grade) {
     this.grade = grade;
   }
+
   public double getFeesPaid() {
     return feesPaid;
   }
+
   public void setFeesPaid(double feesPaid) {
     this.feesPaid = feesPaid;
   }
+
   public double getTotalFees() {
     return totalFees;
   }
+  
   public void setTotalFees(double totalFees) {
     this.totalFees = totalFees;
   }
