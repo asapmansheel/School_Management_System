@@ -2,17 +2,17 @@ import java.util.ArrayList;
 
 public class School {
   
-  private ArrayList<Teacher> teachers;
-  private ArrayList<Student> students;
-  private double totalMoneyEarned;
-  private double totalMoneySpent;
+  private ArrayList<Teacher> teachers = new ArrayList<Teacher>();
+  private ArrayList<Student> students = new ArrayList<Student>();
+  private static double totalMoneyEarned;
+  private static double totalMoneySpent;
+  
 
-  // Constructor
   public School(ArrayList<Teacher> teachers, ArrayList<Student> students) {
     this.teachers = teachers;
     this.students = students;
-    this.totalMoneyEarned = 0;
-    this.totalMoneySpent = 0;
+    totalMoneyEarned = 0;
+    totalMoneySpent = 0;
   }
 
   // Getters and setters
@@ -43,13 +43,13 @@ public class School {
   }
 
   // Method to update total money earned
-  public void updateTotalMoneyEarned(double moneyEarned) {
-    this.totalMoneyEarned += moneyEarned;
+  public static void updateTotalMoneyEarned(double moneyEarned) {
+    totalMoneyEarned += moneyEarned;
   }
 
   // Method to update total money spent
-  public void updateTotalMoneySpent(double moneySpent) {
-    this.totalMoneyEarned -= moneySpent;
+  public static void updateTotalMoneySpent(double moneySpent) {
+    totalMoneyEarned -= moneySpent;
   }
 
 }

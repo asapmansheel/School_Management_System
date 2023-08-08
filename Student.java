@@ -47,14 +47,17 @@ public class Student {
   public double getTotalFees() {
     return totalFees;
   }
-  
+
   public void setTotalFees(double totalFees) {
     this.totalFees = totalFees;
   }
 
   // Method to update the fees that have been paid
-  public void updateFeesPaid(double fees) {
+  public void payFees(double fees) {
     this.feesPaid += fees;
+    School.updateTotalMoneyEarned(feesPaid);
   }
   
+  
+
 }
